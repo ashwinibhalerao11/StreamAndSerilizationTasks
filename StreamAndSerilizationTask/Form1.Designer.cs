@@ -47,7 +47,6 @@
             this.btnJsonWrite = new System.Windows.Forms.Button();
             this.btnJsonRead = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -223,20 +222,11 @@
             this.label5.Text = "Product Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(463, 48);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(267, 147);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnJsonRead);
             this.Controls.Add(this.btnJsonWrite);
@@ -258,6 +248,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +275,6 @@
         private System.Windows.Forms.Button btnJsonWrite;
         private System.Windows.Forms.Button btnJsonRead;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
